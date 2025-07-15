@@ -57,10 +57,10 @@ To begin, we need to clone projects:
       - Navigate to the relevant section in your app.
       - Verify that the extension is functioning correctly and is visible for the specified pods and plants defined in the component.json file.
 	  
-  Note:  clone the util project from the following GitHub repository:  https://github.com/SAP-samples/digital-manufacturing-extension-samples.git
-         Navigate to: dmc-coreplugin-extension > plugins > webapp > utils  and repeat the same setup process for this utility project as well	
+     Note:  clone the util project from the following GitHub repository:  https://github.com/SAP-samples/digital-manufacturing-extension-samples.git
+             Navigate to: dmc-coreplugin-extension > plugins > webapp > utils  and repeat the same setup process for this utility project as well	
   
- 6. Configuring the Line Monitor Last Indicator Value Plugin:
+**6. Configuring the Line Monitor Last Indicator Value Plugin:
 
       Open the POD Designer app and either open an existing Line Monitor POD or create a copy from the Default Line Monitor POD.
       Add a new Plugin Container Control and include the Line Monitor Last Indicator Value Plugin to the "Asset Details (Layout)" page.
@@ -69,8 +69,8 @@ To begin, we need to clone projects:
       Select the Indicators (e.g., BatchNumber, DeviceSerialNumber, FunctionalTestResult, ManufacturingDate) you wish to display in the Line Monitor POD for each Work Center.
       Save the POD configuration.
       Open your Line Monitor POD, navigate to the Asset Details page for one of the configured Work Centers, and verify that the Indicators appear with an initial value of “-”.
-
- 7. Creating a Cloud Process to Post Last Indicator Values:
+      
+**7. Creating a Cloud Process to Post Last Indicator Values:
 
       In Production Process Designer, create a new Cloud Process.
       Add a Start Control and define the following input parameters:
@@ -130,12 +130,12 @@ To begin, we need to clone projects:
         Connect the false path to the End Control.
         Save and Deploy the process.
 
- 8. Test the Process:
+**8. Test the Process:
 
       Run the deployed Cloud Process manually.
       Provide the required input parameters (Asset ID, Plant, Work Center).
       Asset ID can be retrieved from the Manage Assets app.
       After successful execution, the configured Indicator values should appear in the Line Monitor POD, under the Asset Details section.
     
-  9. See the CPP_postLastIndicatorValue process under ResourceAndOperationData design for steps 7 and 8 in the MB01 plant.
+**9. See the CPP_postLastIndicatorValue process under ResourceAndOperationData design for steps 7 and 8 in the MB01 plant.
     
