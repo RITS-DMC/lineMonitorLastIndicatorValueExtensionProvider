@@ -138,5 +138,5 @@ To begin, we need to clone projects:
       After successful execution, the configured Indicator values should appear in the Line Monitor POD, under the Asset Details section.
     
 **9. See the CPP_postLastIndicatorValue process under ResourceAndOperationData design for steps 7 and 8 in the MB01 plant.
-     Password to import PPD: Rits@123
+     
     
